@@ -1,0 +1,11 @@
+
+use PHPUnit\Framework\TestCase;
+
+class MyAppTest
+    extends TestCase
+{
+
+    public function testArrayIsNotEmpty()
+    {
+    }
+}

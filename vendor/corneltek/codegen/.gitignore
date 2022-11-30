@@ -1,0 +1,5 @@
+/build
+/composer.phar
+/.idea
+/CodeGen.iml
+/vendor

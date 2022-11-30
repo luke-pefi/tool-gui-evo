@@ -1,0 +1,109 @@
+/**
+ * 
+ * Style linking for the various fonts we've got locally
+ *
+ */
+
+@font-face {
+   font-family: 'Open Sans';
+   src: url('OpenSans/OpenSans-Light.ttf')  format('truetype');
+   font-weight: 300;
+   font-style: regular;
+}
+
+@font-face {
+   font-family: 'Open Sans';
+   src: url('OpenSans/OpenSans-Regular.ttf')  format('truetype');
+   font-weight: 400;
+   font-style: regular;
+}
+
+@font-face {
+   font-family: 'Open Sans';
+   src: url('OpenSans/OpenSans-Bold.ttf')  format('truetype');
+   font-weight: 700;
+   font-style: regular;
+}
+
+@font-face {
+   font-family: 'Open Sans';
+   src: url('OpenSans/OpenSans-ExtraBold.ttf')  format('truetype');
+   font-weight: 800;
+   font-style: regular;
+}
+
+@font-face {
+   font-family: 'Open Sans';
+   src: url('OpenSans/OpenSans-LightItalic.ttf')  format('truetype');
+   font-weight: 300;
+   font-style: italic;
+}
+
+@font-face {
+   font-family: 'Open Sans';
+   src: url('OpenSans/OpenSans-Italic.ttf')  format('truetype');
+   font-weight: 400;
+   font-style: italic;
+}
+
+@font-face {
+   font-family: 'Open Sans';
+   src: url('OpenSans/OpenSans-BoldItalic.ttf')  format('truetype');
+   font-weight: 700;
+   font-style: italic;
+}
+
+@font-face {
+   font-family: 'Open Sans';
+   src: url('OpenSans/OpenSans-ExtraBoldItalic.ttf')  format('truetype');
+   font-weight: 800;
+   font-style: italic;
+}
+
+@font-face {
+   font-family: 'Montserrat';
+   src: url('Montserrat/Montserrat-Regular.ttf')  format('truetype');
+   font-weight: 400;
+   font-style: regular;
+}
+
+@font-face {
+   font-family: 'Montserrat';
+   src: url('Montserrat/Montserrat-Bold.ttf')  format('truetype');
+   font-weight: 700;
+   font-style: regular;
+}
+
+@font-face {
+   font-family: 'Montserrat';
+   src: url('Montserrat/Montserrat-ExtraBold.ttf')  format('truetype');
+   font-weight: 800;
+   font-style: regular;
+}
+
+@font-face {
+   font-family: 'Montserrat';
+   src: url('Montserrat/Montserrat-Italic.ttf')  format('truetype');
+   font-weight: 400;
+   font-style: italic;
+}
+
+@font-face {
+   font-family: 'Montserrat';
+   src: url('Montserrat/Montserrat-BoldItalic.ttf')  format('truetype');
+   font-weight: 700;
+   font-style: italic;
+}
+
+@font-face {
+   font-family: 'Montserrat';
+   src: url('Montserrat/Montserrat-ExtraBoldItalic.ttff')  format('truetype');
+   font-weight: 800;
+   font-style: italic;
+}
+
+
+
+
+
+

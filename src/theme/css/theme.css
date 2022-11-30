@@ -1,0 +1,497 @@
+body {
+  background-color: red;
+  margin:0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Open Sans",Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  line-height: 22px;
+  position: relative;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+.fw-thin {
+  font-weight: 300 !important;
+}
+
+.fw-semibold {
+  font-weight: 600 !important;
+}
+
+.page-wrapper {
+  background-image: url(../images/pefi-splash.png);
+  display: block;
+  width: 800px;
+  height: 480px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.page-content {
+  background-color: transparent;
+  display: block;
+  float: left;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.top-nav-container {
+  position: absolute;
+  display: block;
+  top: 0px;
+  width: 800px;
+  height: 24px;
+  background-color: black;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
+
+.top-nav-container .wifi-comp,
+.top-nav-container .login-comp,
+.top-nav-container .canbus-comp,
+.top-nav-container .temp-comp {
+  display: inline-block;
+  float: left;
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 8px;
+  padding: 0;
+  line-height: 22px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+.bottom-nav-wrapper {
+  position: absolute;
+  bottom: 0px;
+  width: 800px;
+  height: 80px;
+  padding: 0;
+  margin: 0;
+  background-color: #515151;
+}
+
+.bottom-nav-container {
+  display: block;
+  width: 800px;
+  height: 80px;
+  padding-top: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+  background: rgb(0,0,0); /* Old browsers */
+  background: -moz-linear-gradient(top,    rgba(0,0,0,.5) 0%, rgba(81,81,81,1) 80%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0,0,0,.5) 0%, rgba(81,81,81,1) 80%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,   rgba(0,0,0,.5) 0%, rgba(81,81,81,1) 80%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#515151',GradientType=0 ); /* IE6-9 */
+}
+
+.nav-button-wrapper {
+  width: 64px;
+  height: 64px;
+  display: block;
+  float: left;
+  margin: 0;
+  margin-right: 8px;
+  padding: 0;
+  background-color: red;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #000;
+  background-image: url(../images/pefi_button_mask.png);
+  mask-type: alpha;
+}
+
+.nav-button-wrapper:hover {
+  outline: none;
+  border-color: #9ecaed;
+  box-shadow: 0 0 10px #9ecaed;
+}
+
+.nav-button-wrapper img {
+  width: 64px;
+  height: 64px;
+  outline: none;
+  border: 0 none transparent;
+}
+
+.panel {
+  position: absolute;
+  display: block;
+  bottom: 80px;
+  left: 20px;
+  width: 760px;
+  height: 380px;
+  max-height: 400px;
+  padding: 0;
+  margin: 0;
+  background-color: #515151;
+  z-index: 10;
+  -moz-border-top-left-radius: 8px;
+  -webkit-border-top-left-radius: 8px;
+  border-top-left-radius: 8px;
+  -moz-border-top-right-radius: 8px;
+  -webkit-border-top-right-radius: 8px;
+  border-top-right-radius: 8px;
+  border: 1px solid #000;
+  overflow: hidden;
+  color: #fff;
+}
+
+.panel-header {
+  width: 100%;
+  display: block;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.panel-header .panel-collapse {
+  display: block;
+  float: left;
+  margin:0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 22px;
+  width: 22px;
+  height: 22px;
+  margin-left: 8px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.panel-header h4 {
+  display: block;
+  margin:0;
+  padding: 0;
+  width: 90px;
+  font-family: "Open Sans",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  height: auto;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.panel-body {
+  display: block;
+  margin:0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #353535;
+  height: 100%;
+}
+
+.panel-body-sub-wrapper-flash {
+  width: 200%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  left: 0;
+}
+
+div.flash-progress {
+  margin: 0px;
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  height: 60px;
+  width: 96%;
+  display: block;
+}
+
+div.flash-progress-bar {
+  height: 100%;
+  padding-left: 3px;
+}
+
+div.flash-progress-bar span {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  display: block;
+  line-height: 60px;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+div.flash-progress-action-bar {
+  margin: 0px;
+  margin-top: 16px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+div.flash-progress-action-bar button {
+  margin: 0px;
+  margin-right: 8px;
+}
+
+div.flash-progress-summary {
+  margin: 0px;
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  width: 100%;
+}
+
+div.flash-progress-message {
+  margin: 0px;
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.panel-body-sub-panel-flash {
+  width: 50.0%;
+  float: left;
+}
+
+.panel-budy-sub-wrapper-can {
+  width: 300%;
+  height: 280px;
+  overflow: hidden;
+  position: relative;
+  left: 0;
+}
+
+.panel-body-sub-panel {
+  width: 33.3333%;
+  float: left;
+}
+
+.can-button-bar {
+  height: 40px;
+  display: block;
+  margin:0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.can-button-bar button {
+  margin: 0px;
+  margin-left: 8px;
+  margin-top: 8px;
+  height: 30px;
+  line-height: 0.85;
+}
+
+.panel-body h3 {
+  display: block;
+  margin:0;
+  padding: 0;
+  font-family: "Open Sans",Helvetica,Arial,sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  height: auto;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  margin-left: 8px;
+  width: 100%;
+}
+
+.panel-body h3.leftcol {
+  width: 100px;
+  display: inline-block;
+  float: left;
+}
+
+.panel-body h3.rightcol {
+  width: 550px;
+  display: inline-block;
+  float: left;
+}
+
+.wifi-connections {
+  margin: 0px;
+  padding: 0px;
+  display: block;
+  width: 100%;
+  height: 340px;
+  overflow-y: auto;
+}
+
+.snapshot-list,
+.dtc-list {
+  margin: 0px;
+  padding: 0px;
+  display: block;
+  height: 280px;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.dtc-list {
+  margin-top: 16px;
+  margin-left: 8px;
+}
+
+.dtc-list li {
+  margin: 0px;
+  margin-bottom: 8px;
+}
+
+.licenses-list{
+  margin: 0px;
+  padding: 0px;
+  display: block;
+  width: 100%;
+  height: 340px;
+  overflow-y: auto;
+}
+
+.wifi-connections li {
+  background-color: #515151;
+  height: 48px;
+}
+
+.licenses-list li,
+.snapshot-list li {
+  background-color: #515151;
+  height: auto;
+}
+
+.wifi-connections li:hover,
+.licenses-list li:hover,
+.snapshot-list li:hover,
+.dtc-list li:hover {
+  background-color: #7f7e7e;
+}
+
+.wifi-connections li i,
+.licenses-list li i,
+.snapshot-list li i,
+.dtc-list li i {
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin-right: 8px;
+  font-size: 20px;
+  line-height: 20px;
+  height: 20px;
+  width: 20px;
+}
+
+.wifi-list-action-buttons,
+.licenses-list-action-buttons {
+  display: block;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 8px;
+}
+
+.wifi-join-action,
+.wifi-forget-action,
+.license-activate-action {
+  padding: 4px;
+  margin-right: 8px;
+}
+
+.modal {
+  position: absolute;
+  width: 800px;
+  top: 24px;
+  right: 50px;
+  bottom: 80px;
+  left: 50px;
+  z-index: 1041;
+}
+
+#wifi-password-input::placeholder,
+#wifi-password-input::-moz-placeholder {
+  color: #000;
+  opacity: 0.2;
+}
+
+div.ui-keyboard {
+  z-index: 2000;
+}
+
+.vertical-center {
+  min-height: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.ui-keyboard {
+  position: unset;
+  top: unset;
+  left: unset;
+}
+
+.ui-keyboard .btn {
+  font-size: 1.2rem;
+}
+
+#login-password-input::placeholder,
+#login-password-input::-moz-placeholder {
+  color: #000;
+  opacity: 0.2;
+}
+
+#login-userid-input::placeholder,
+#login-userid-input::-moz-placeholder {
+  color: #000;
+  opacity: 0.2;
+}
+
+ul.licenses-list li.list-group-item .left-col {
+  display: inline-block;
+  float: left;
+  width: 100px;
+  margin: 0;
+  padding: 0;
+  margin-right: 10px;
+}
+
+ul.licenses-list li.list-group-item .mid-col {
+  display: inline-block;
+  float: left;
+  width: 490px;
+  margin: 0;
+  padding: 0;
+}
+
+ul.licenses-list li.list-group-item .right-col {
+  display: inline-block;
+  width: 100px;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+.version-label {
+  display: inline-block;
+  float: right;
+  margin-right: 16px;
+  margin-top: 16px;
+  padding: 0px;
+  background-color: transparent;
+  color: #fff;
+  font-family: "Open Sans",Helvetica,Arial,sans-serif;
+  font-size: 32px;
+  line-height: 32px;
+  height: 22px;
+  width: 200px;
+}

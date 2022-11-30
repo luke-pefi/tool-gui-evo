@@ -1,0 +1,11 @@
+
+use PHPUnit\Framework\TestCase;
+
+class WhatASimpleTest
+    extends TestCase
+{
+
+    public function testSimple()
+    {
+    }
+}

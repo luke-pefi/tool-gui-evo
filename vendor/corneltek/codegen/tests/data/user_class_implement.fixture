@@ -1,0 +1,6 @@
+
+
+class impl
+    implements iface
+{
+}

@@ -1,0 +1,13 @@
+
+use PHPUnit\Framework\TestCase;
+
+class MyAppSimpleTest
+    extends TestCase
+{
+
+    public function testSimple()
+    {
+        $this->assertEquals(10, 10);
+        $this->assertEquals(10, 10);
+    }
+}

@@ -1,0 +1,43 @@
+{
+  "name": "rest api",
+  
+  "description": "REST API",
+  
+  "type": "library",
+  
+  "require": {
+    "lcobucci/jwt":                 "*",
+    "league/route":                 "*",
+    "league/container":             "*",
+    "zendframework/zend-diactoros": "*",
+    "monolog/monolog":              "*",
+    "nesbot/carbon":                "*",
+    "swiftmailer/swiftmailer":      "*",
+    "sabre/xml":                    "*",
+    "guzzlehttp/guzzle":            "~6.0",
+    "symfony/yaml":                 "*",
+    "corneltek/cliframework":       "^3.0",
+    "corneltek/getoptionkit":       "^2.4",
+    "corneltek/class-template":     "^3.0.0",
+    "corneltek/universal":          "^1.7",
+    "corneltek/codegen":            "^3.0.0",
+    "pimple/pimple":                "^3",
+    "symfony/finder":               "^2.8|3.0",
+    "symfony/class-loader":         "^2.8|3.0",
+    "kunalvarma05/dropbox-php-sdk": "*",
+    "php":                          "^5.5"
+  },
+  
+  "autoload": {
+    "psr-4": {
+      "util\\":       "src/util",
+      "rest\\":       "src/rest",
+      "vin\\":        "src/vin",
+      "networking\\": "src/networking",
+      "api\\":        "src/api",
+      "payment\\":    "src/payment"
+    }
+  },
+  "version": "1.0.0"
+}
+
